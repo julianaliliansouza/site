@@ -54,8 +54,8 @@
   --color-navy-light: oklch(0.35 0.05 250);
   --color-coral: oklch(0.72 0.17 40);
   --color-coral-dark: oklch(0.62 0.17 40);
-  --color-teal: oklch(0.78 0.12 175);
-  --color-teal-dark: oklch(0.60 0.12 175);
+  --color-teal: oklch(0.65 0.10 240);
+  --color-teal-dark: oklch(0.50 0.10 240);
   --color-offwhite: oklch(0.98 0.003 90);
   --color-warmgray: oklch(0.92 0.005 90);
 
@@ -88,8 +88,8 @@
   --ring: oklch(0.72 0.17 40);
   --chart-1: oklch(0.25 0.05 250);
   --chart-2: oklch(0.72 0.17 40);
-  --chart-3: oklch(0.78 0.12 175);
-  --chart-4: oklch(0.60 0.12 175);
+  --chart-3: oklch(0.65 0.10 240);
+  --chart-4: oklch(0.50 0.10 240);
   --chart-5: oklch(0.35 0.05 250);
   --sidebar: oklch(0.98 0.003 90);
   --sidebar-foreground: oklch(0.25 0.05 250);
@@ -167,11 +167,11 @@ html {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.78 0.12 175 / 0.4);
+  background: oklch(0.65 0.10 240 / 0.4);
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.78 0.12 175 / 0.7);
+  background: oklch(0.65 0.10 240 / 0.7);
 }
 
 /* Selection color */
