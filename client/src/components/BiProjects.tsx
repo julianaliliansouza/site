@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 const POWERBI_IMG =
-  "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/powerbi-dashboard-kiYjvTsZy4Ekxc7CjsqczZ.webp";
+  "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/powerbi-bc-dashboard-jxqJv2FdSemuDKFpkpS6eN.webp";
 
 const biProjects = [
   {
