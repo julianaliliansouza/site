@@ -1,8 +1,7 @@
 /*
-  CTA BANNER — Swiss Design Tropical
-  - Full-width coral background
-  - Bold serif headline
-  - Single CTA button
+  CTA BANNER — Swiss Design Tropical (Comercial)
+  - Tom urgente e orientado a ação
+  - Foco em resultados tangíveis
 */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -25,8 +24,8 @@ export default function CtaBanner() {
           transition={{ duration: 0.6 }}
           className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-6 max-w-3xl mx-auto"
         >
-          Transforme a inteligência turística de BC em{" "}
-          <span className="italic">vantagem competitiva.</span>
+          A alta temporada não espera.{" "}
+          <span className="italic">Seu marketing também não deveria.</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 15 }}
@@ -34,18 +33,28 @@ export default function CtaBanner() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-base text-white/80 max-w-lg mx-auto mb-8"
         >
-          Junte-se aos parceiros que já utilizam dados e automação para impulsionar resultados no turismo.
+          Agende uma demonstração gratuita e veja como o DataBC pode aumentar suas reservas e reduzir seus custos de marketing em até 40%.
         </motion.p>
-        <motion.a
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.25 }}
-          href="#contato"
-          className="group inline-flex items-center gap-3 px-7 py-4 bg-navy text-white font-semibold text-sm rounded-md hover:bg-navy-light transition-colors"
+          className="flex flex-col sm:flex-row gap-4 justify-center"
         >
-          Fale com nossa equipe
-          <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-        </motion.a>
+          <a
+            href="#contato"
+            className="group inline-flex items-center justify-center gap-3 px-7 py-4 bg-navy text-white font-semibold text-sm rounded-md hover:bg-navy-light transition-colors"
+          >
+            Agendar demo gratuita
+            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+          <a
+            href="#solucoes"
+            className="inline-flex items-center justify-center gap-3 px-7 py-4 bg-white/15 text-white font-semibold text-sm rounded-md hover:bg-white/25 transition-colors border border-white/20"
+          >
+            Ver planos e preços
+          </a>
+        </motion.div>
       </div>
     </section>
   );

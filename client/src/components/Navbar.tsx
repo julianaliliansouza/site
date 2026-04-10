@@ -84,7 +84,7 @@ export default function Navbar() {
                 : "bg-white/10 text-white border border-white/20 hover:bg-white/20"
             }`}
           >
-            Começar agora
+            Agendar demo
           </a>
         </div>
 
@@ -123,7 +123,7 @@ export default function Navbar() {
                 className="inline-flex items-center justify-center px-5 py-3 text-sm font-semibold text-white bg-navy rounded-md mt-2"
                 onClick={() => setMobileOpen(false)}
               >
-                Começar agora
+                Agendar demo
               </a>
             </div>
           </motion.div>

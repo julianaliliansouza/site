@@ -1,22 +1,21 @@
 /*
-  ABOUT — Swiss Design Tropical
-  - Asymmetric layout with editorial feel
-  - Data visualization image as decorative element
-  - Values displayed as a clean list with teal accent dots
-  - Oversized numbers as decorative elements
+  ABOUT — Swiss Design Tropical (Comercial)
+  - Tom focado no mercado e resultados
+  - Sem referências governamentais
+  - Valores orientados ao cliente
 */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { Eye, Compass, Shield, Lightbulb, Users } from "lucide-react";
+import { Rocket, Shield, Lightbulb, HeartHandshake, TrendingUp } from "lucide-react";
 
 const DATA_VIZ = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/data-viz-RDoHTRmDETvjZTuugwPsJJ.webp";
 
 const values = [
-  { icon: Eye, text: "Transparência e acesso à informação pública" },
-  { icon: Lightbulb, text: "Inovação e uso inteligente da tecnologia" },
-  { icon: Shield, text: "Ética no tratamento e proteção dos dados (LGPD)" },
-  { icon: Compass, text: "Responsabilidade com o desenvolvimento local" },
-  { icon: Users, text: "Colaboração entre setores público, privado e sociedade" },
+  { icon: Rocket, text: "Resultados mensuráveis e foco em performance" },
+  { icon: Lightbulb, text: "Inovação e tecnologia de ponta aplicada ao turismo" },
+  { icon: Shield, text: "Segurança e proteção total dos dados (LGPD)" },
+  { icon: HeartHandshake, text: "Parceria próxima e suporte dedicado a cada cliente" },
+  { icon: TrendingUp, text: "Crescimento sustentável baseado em dados reais" },
 ];
 
 export default function About() {
@@ -33,7 +32,7 @@ export default function About() {
       <div className="container relative z-10">
         {/* Section Header */}
         <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-          02 — Sobre nós
+          02 — Quem somos
         </span>
 
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">
@@ -45,9 +44,9 @@ export default function About() {
               transition={{ duration: 0.7 }}
               className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-8"
             >
-              O hub de inteligência<br />
-              de dados turísticos de{" "}
-              <span className="italic text-teal">Balneário Camboriú.</span>
+              A plataforma que o turismo<br />
+              de BC{" "}
+              <span className="italic text-teal">escolheu para crescer.</span>
             </motion.h2>
 
             <motion.div
@@ -57,15 +56,15 @@ export default function About() {
               className="space-y-6 mb-12"
             >
               <p className="text-base lg:text-lg text-white/60 leading-relaxed">
-                O DataBC foi criado com o objetivo de consolidar, analisar e divulgar informações 
-                relevantes para apoiar a tomada de decisão de gestores, empreendedores, entidades 
-                públicas e toda a sociedade. Com a inclusão de um SaaS de marketing com automação 
-                de processos, nos posicionamos como parceiro estratégico para transformar dados em 
-                ações e resultados concretos no setor turístico.
+                O DataBC nasceu da necessidade real do mercado turístico de Balneário Camboriú: 
+                ter acesso a dados confiáveis e ferramentas práticas para atrair mais clientes. 
+                Combinamos inteligência de dados com automação de marketing para que hotéis, 
+                agências, restaurantes e negócios turísticos possam focar no que fazem de melhor 
+                — enquanto a tecnologia cuida do resto.
               </p>
             </motion.div>
 
-            {/* Mission & Vision */}
+            {/* Mission & Vision — Comercial */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -73,18 +72,17 @@ export default function About() {
               className="grid sm:grid-cols-2 gap-8 mb-12"
             >
               <div className="border-l-2 border-coral pl-5">
-                <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-3">Missão</h3>
+                <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-3">Nossa missão</h3>
                 <p className="text-sm text-white/50 leading-relaxed">
-                  Promover o acesso a dados estratégicos e confiáveis sobre o turismo de BC, 
-                  fortalecendo a inteligência de mercado e apoiando a tomada de decisões no setor 
-                  público e privado.
+                  Ajudar negócios turísticos a venderem mais com menos esforço, usando dados 
+                  estratégicos e automação inteligente de marketing.
                 </p>
               </div>
               <div className="border-l-2 border-teal pl-5">
-                <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-3">Visão</h3>
+                <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-3">Nossa visão</h3>
                 <p className="text-sm text-white/50 leading-relaxed">
-                  Ser referência em inteligência de dados turísticos e automação de marketing, 
-                  contribuindo com inovação, transparência e desenvolvimento sustentável.
+                  Ser a plataforma de referência em marketing e dados para o turismo, 
+                  impulsionando Balneário Camboriú como destino inteligente e competitivo.
                 </p>
               </div>
             </motion.div>
@@ -95,7 +93,7 @@ export default function About() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-6">Valores</h3>
+              <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-6">O que nos move</h3>
               <div className="space-y-4">
                 {values.map((v, i) => (
                   <div key={i} className="flex items-start gap-3 group">
@@ -121,18 +119,18 @@ export default function About() {
             <div className="relative w-full">
               <img
                 src={DATA_VIZ}
-                alt="Visualização artística de dados oceânicos"
+                alt="Visualização de dados e analytics"
                 className="w-full h-auto rounded-lg"
               />
               {/* Decorative border */}
               <div className="absolute -top-4 -right-4 w-full h-full border border-teal/20 rounded-lg -z-10" />
 
-              {/* Propósito card overlay */}
+              {/* Results card overlay */}
               <div className="absolute -bottom-6 -left-6 bg-coral p-5 rounded-lg max-w-xs shadow-xl">
-                <p className="text-xs font-mono uppercase tracking-wider text-white/70 mb-1">Propósito</p>
+                <p className="text-xs font-mono uppercase tracking-wider text-white/70 mb-1">Nosso compromisso</p>
                 <p className="text-sm text-white font-medium leading-relaxed">
-                  Fortalecer BC como um destino turístico inteligente, por meio da geração e 
-                  disseminação de conhecimento baseado em dados.
+                  Cada cliente nosso vende mais. Se você não crescer, nós não crescemos. 
+                  Simples assim.
                 </p>
               </div>
             </div>

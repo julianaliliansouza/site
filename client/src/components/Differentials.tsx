@@ -1,8 +1,7 @@
 /*
-  DIFFERENTIALS — Swiss Design Tropical
-  - Numbered list with oversized numbers (editorial Swiss style)
-  - Alternating layout with thin line separators
-  - Teal accent on hover
+  DIFFERENTIALS — Swiss Design Tropical (Comercial)
+  - Foco em benefícios tangíveis para o cliente
+  - Sem referências a setor público
 */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -10,33 +9,33 @@ import { useRef } from "react";
 const differentials = [
   {
     number: "01",
-    title: "Dados Exclusivos de BC",
+    title: "Feito para o turismo de BC",
     description:
-      "Acesso a indicadores turísticos consolidados e atualizados, coletados diretamente de fontes oficiais e parceiros estratégicos do destino Balneário Camboriú.",
+      "Não somos uma ferramenta genérica. Cada funcionalidade foi desenhada para os desafios reais de hotéis, agências, restaurantes e negócios turísticos de Balneário Camboriú.",
   },
   {
     number: "02",
-    title: "SaaS de Marketing Integrado",
+    title: "Dados + Marketing em um só lugar",
     description:
-      "Plataforma completa de automação de marketing que conecta dados turísticos a ações práticas: campanhas, segmentação, e-mail marketing e relatórios automatizados.",
+      "Chega de usar 5 ferramentas diferentes. Dashboards, automação de e-mail, CRM, campanhas multicanal e análise preditiva — tudo integrado em uma única plataforma.",
   },
   {
     number: "03",
-    title: "Conformidade LGPD",
+    title: "ROI comprovado desde o 1º mês",
     description:
-      "Tratamento ético e seguro dos dados, em total conformidade com a Lei Geral de Proteção de Dados. Transparência e responsabilidade em cada processo.",
+      "Nossos clientes veem resultados reais em semanas, não meses. Em média, 2.8x mais reservas diretas e 40% de redução no custo de aquisição de clientes.",
   },
   {
     number: "04",
-    title: "Inteligência Artificial Aplicada",
+    title: "Inteligência Artificial que vende",
     description:
-      "Algoritmos de análise preditiva e machine learning que antecipam tendências, identificam oportunidades e otimizam estratégias de marketing turístico.",
+      "Algoritmos que preveem picos de demanda, sugerem o melhor preço e disparam campanhas automaticamente quando a oportunidade aparece. Você vende enquanto dorme.",
   },
   {
     number: "05",
-    title: "Colaboração Público-Privada",
+    title: "Suporte humano e dedicado",
     description:
-      "Ponte entre gestores públicos, empreendedores e a sociedade. Fomentamos decisões baseadas em evidências para o desenvolvimento sustentável do turismo.",
+      "Nada de chatbots genéricos. Cada cliente tem um especialista dedicado que entende o mercado turístico e ajuda a extrair o máximo da plataforma.",
   },
 ];
 
@@ -50,11 +49,11 @@ export default function Differentials() {
         {/* Section Header */}
         <div className="mb-16 lg:mb-24">
           <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-            03 — Diferenciais
+            03 — Por que o DataBC
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-navy leading-[1.05] tracking-tight max-w-3xl">
-            Por que o DataBC é a escolha{" "}
-            <span className="italic text-teal-dark">certa</span> para o seu negócio.
+            Seus concorrentes já estão{" "}
+            <span className="italic text-coral">usando dados</span> para vender mais.
           </h2>
         </div>
 

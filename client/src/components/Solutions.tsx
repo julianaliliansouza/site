@@ -1,9 +1,7 @@
 /*
-  SOLUTIONS — Swiss Design Tropical
-  - Section title left-aligned with oversized serif
-  - Asymmetric grid: large image left, feature cards right
-  - Thin horizontal lines as separators
-  - Feature cards with teal accent dots
+  SOLUTIONS — Swiss Design Tropical (Comercial)
+  - Foco em resultados de negócio e ROI
+  - Linguagem orientada a benefícios para o trade turístico
 */
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
@@ -16,33 +14,33 @@ const AUTOMATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291
 const features = [
   {
     icon: BarChart3,
-    title: "Dashboards Interativos",
-    description: "Visualize indicadores turísticos em tempo real com painéis personalizáveis e intuitivos.",
+    title: "Dashboards de Performance",
+    description: "Acompanhe taxa de ocupação, receita por canal e ROI das campanhas em tempo real.",
   },
   {
     icon: Zap,
     title: "Automação de Marketing",
-    description: "Crie fluxos automatizados de campanhas, e-mails e ações de engajamento para o trade turístico.",
+    description: "Dispare campanhas automáticas de e-mail, WhatsApp e remarketing para converter mais reservas.",
   },
   {
     icon: Target,
-    title: "Segmentação Inteligente",
-    description: "Identifique e alcance públicos específicos com base em dados comportamentais e demográficos.",
+    title: "Segmentação de Clientes",
+    description: "Crie audiências por perfil de gasto, origem e comportamento para campanhas ultra-direcionadas.",
   },
   {
     icon: Mail,
     title: "Campanhas Multicanal",
-    description: "Gerencie e-mail marketing, redes sociais e notificações em uma única plataforma integrada.",
+    description: "E-mail, SMS, redes sociais e Google Ads integrados em uma única plataforma com métricas unificadas.",
   },
   {
     icon: TrendingUp,
-    title: "Análise Preditiva",
-    description: "Antecipe tendências de demanda turística e otimize estratégias com inteligência artificial.",
+    title: "Previsão de Demanda",
+    description: "Antecipe picos de temporada e ajuste preços e campanhas com inteligência preditiva baseada em dados.",
   },
   {
     icon: Globe,
-    title: "Pesquisas e Relatórios",
-    description: "Acesse pesquisas de perfil do turista, satisfação e impacto econômico do turismo em BC.",
+    title: "CRM Turístico",
+    description: "Gerencie o relacionamento com hóspedes e clientes do check-in ao pós-venda, tudo automatizado.",
   },
 ];
 
@@ -60,12 +58,12 @@ export default function Solutions() {
               01 — Soluções
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-navy leading-[1.05] tracking-tight">
-              Inteligência e automação<br />
-              <span className="italic text-coral">em uma só plataforma.</span>
+              Tudo que seu negócio precisa<br />
+              <span className="italic text-coral">para vender mais.</span>
             </h2>
           </div>
           <p className="text-base text-navy/60 max-w-md lg:text-right leading-relaxed">
-            Reunimos dados turísticos estratégicos e ferramentas de automação de marketing para impulsionar o destino Balneário Camboriú.
+            Uma plataforma completa de dados e automação de marketing criada especificamente para o mercado turístico de Balneário Camboriú.
           </p>
         </div>
 
@@ -81,7 +79,7 @@ export default function Solutions() {
             <div className="rounded-lg overflow-hidden shadow-2xl shadow-navy/10">
               <img
                 src={DASHBOARD_IMG}
-                alt="Dashboard de analytics turístico do DataBC"
+                alt="Dashboard de performance do DataBC"
                 className="w-full h-auto"
               />
             </div>
@@ -97,10 +95,10 @@ export default function Solutions() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 * i }}
-                className="group p-6 bg-white rounded-lg border border-border hover:border-teal/40 transition-all duration-300 hover:shadow-lg hover:shadow-teal/5"
+                className="group p-6 bg-white rounded-lg border border-border hover:border-coral/40 transition-all duration-300 hover:shadow-lg hover:shadow-coral/5"
               >
-                <div className="w-10 h-10 rounded-md bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-teal/10 transition-colors">
-                  <feature.icon size={20} className="text-navy group-hover:text-teal-dark transition-colors" />
+                <div className="w-10 h-10 rounded-md bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-coral/10 transition-colors">
+                  <feature.icon size={20} className="text-navy group-hover:text-coral transition-colors" />
                 </div>
                 <h3 className="font-sans font-semibold text-navy text-base mb-2">{feature.title}</h3>
                 <p className="text-sm text-navy/55 leading-relaxed">{feature.description}</p>
@@ -120,15 +118,15 @@ export default function Solutions() {
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12 mb-8">
               <div className="flex-1">
                 <span className="font-mono text-xs tracking-wider uppercase text-teal-dark mb-2 block">
-                  Automação Visual
+                  Automação que converte
                 </span>
                 <h3 className="font-serif text-2xl lg:text-3xl text-navy leading-tight">
-                  Fluxos inteligentes que trabalham por você
+                  Seus clientes recebem a mensagem certa, na hora certa
                 </h3>
               </div>
               <p className="text-sm text-navy/55 max-w-sm leading-relaxed">
-                Crie jornadas automatizadas de marketing com nosso editor visual. 
-                De e-mails a segmentação, tudo conectado aos dados turísticos de BC.
+                Monte jornadas de marketing automatizadas com nosso editor visual. 
+                Do primeiro contato à reserva confirmada, sem trabalho manual.
               </p>
             </div>
             <img
