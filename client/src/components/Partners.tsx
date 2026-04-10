@@ -1,13 +1,13 @@
 /*
-  CLIENTES / SOCIAL PROOF — Swiss Design Tropical (Comercial)
-  - Foco em segmentos do trade turístico
-  - Ícones representando categorias de clientes
+  SEGMENTOS — Swiss Design Tropical (Comercial)
+  - Foco nos segmentos do trade turístico que o DataBC atende
+  - Sem métricas falsas de clientes
 */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Hotel, Plane, UtensilsCrossed, Waves, ShoppingBag, Building2 } from "lucide-react";
 
-const clients = [
+const segments = [
   { name: "Redes Hoteleiras", icon: Hotel },
   { name: "Agências de Turismo", icon: Plane },
   { name: "Restaurantes & Bares", icon: UtensilsCrossed },
@@ -29,7 +29,7 @@ export default function Partners() {
           transition={{ duration: 0.5 }}
           className="text-center font-mono text-xs tracking-wider uppercase text-navy/30 mb-3"
         >
-          Quem já cresce com o DataBC
+          Feito para o trade turístico de BC
         </motion.p>
         <motion.p
           initial={{ opacity: 0 }}
@@ -37,21 +37,21 @@ export default function Partners() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-center text-sm text-navy/50 mb-10 max-w-lg mx-auto"
         >
-          Mais de 340 negócios turísticos usam nossa plataforma para atrair clientes e automatizar o marketing.
+          Marketing com IA personalizado para cada segmento do turismo de Balneário Camboriú.
         </motion.p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6 lg:gap-8">
-          {clients.map((client, i) => (
+          {segments.map((segment, i) => (
             <motion.div
-              key={client.name}
+              key={segment.name}
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.05 * i }}
               className="flex flex-col items-center justify-center h-20 px-4 rounded-md border border-border/50 bg-offwhite/50 hover:border-coral/30 hover:bg-coral/5 transition-all duration-300 gap-2"
             >
-              <client.icon size={20} className="text-navy/30" />
+              <segment.icon size={20} className="text-navy/30" />
               <span className="font-sans font-medium text-xs text-navy/50 text-center leading-tight">
-                {client.name}
+                {segment.name}
               </span>
             </motion.div>
           ))}

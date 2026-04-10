@@ -48,16 +48,16 @@ const biProjects = [
     icon: Plane,
     title: "Demanda de Voos e Passagens",
     description:
-      "Monitoramento via APIs públicas de busca e oferta de voos para Navegantes e Florianópolis. Antecipe picos de demanda turística na região.",
-    metrics: "APIs públicas em tempo real",
+      "Monitoramento via APIs públicas de busca e oferta de voos para Navegantes e Florianópolis. Identifique padrões históricos de demanda turística na região.",
+    metrics: "APIs públicas + dados históricos",
     category: "mercado",
   },
   {
     icon: CloudSun,
     title: "Dados Climáticos e Sazonais",
     description:
-      "Previsão e histórico climático integrados. Correlacione clima com fluxo de clientes e ajuste suas campanhas para os melhores momentos.",
-    metrics: "Previsão de até 15 dias",
+      "Dados históricos de clima integrados. Correlacione padrões climáticos passados com fluxo de clientes e identifique os melhores períodos para suas campanhas.",
+    metrics: "Séries históricas de clima",
     category: "mercado",
   },
   {
@@ -90,7 +90,7 @@ export default function BiProjects() {
           </div>
           <p className="text-base text-navy/60 max-w-md lg:text-right leading-relaxed">
             Implementamos dashboards Power BI com os dados do seu negócio e 
-            inteligência de mercado via APIs públicas de voos, clima e demanda turística.
+            inteligência de mercado via APIs públicas de voos, dados históricos de clima e demanda turística.
           </p>
         </div>
 

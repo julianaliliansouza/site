@@ -17,7 +17,7 @@ const differentials = [
     number: "02",
     title: "Feito para o turismo de BC",
     description:
-      "Cada funcionalidade foi desenhada para os desafios reais de hotéis, agências, restaurantes e atrativos de Balneário Camboriú. Dados de voos, clima e sazonalidade integrados à sua estratégia.",
+      "Cada funcionalidade foi desenhada para os desafios reais de hotéis, agências, restaurantes e atrativos de Balneário Camboriú. Dados históricos de voos, clima e sazonalidade integrados à sua estratégia.",
   },
   {
     number: "03",

@@ -8,7 +8,7 @@ import { useRef } from "react";
 import { Fingerprint, Sparkles, ImageIcon, TrendingUp, CalendarDays, CloudSun } from "lucide-react";
 
 const DASHBOARD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc-dashboard-bc-CrQ67mrtKmVaGPP7n6YmXa.webp";
-const AUTOMATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/automation-flow-diagram-BMAKPVCmngNnT6D5JRAbiR.webp";
+const AUTOMATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/automation-flow-real-D8MQJiqxKNoJ4DGf2sznE6.webp";
 
 const features = [
   {
@@ -44,7 +44,7 @@ const features = [
   {
     icon: CloudSun,
     title: "Inteligência de Mercado",
-    description: "Dados de demanda de voos, condições climáticas e sazonalidade turística via APIs públicas. Antecipe picos, ajuste campanhas e tome decisões baseadas em dados reais do mercado.",
+    description: "Dados históricos de clima, demanda de voos e sazonalidade turística via APIs públicas. Analise padrões passados, identifique tendências sazonais e tome decisões baseadas em dados reais do mercado.",
     tag: "Voos + Clima + Demanda",
   },
 ];

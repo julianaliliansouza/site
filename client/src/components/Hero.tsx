@@ -97,10 +97,10 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.7 }}
           className="mt-16 lg:mt-24 grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-12 border-t border-white/10 pt-8"
         >
-          <StatItem value={340} suffix="+" label="Negócios atendidos" />
-          <StatItem value={2.8} suffix="x" label="Mais conversões diretas" />
-          <StatItem value={40} suffix="%" label="Redução de custo em MKT" />
-          <StatItem value={98} suffix="%" label="Satisfação dos clientes" />
+          <StatItem value={6} suffix="" label="Ferramentas de IA integradas" />
+          <StatItem value={100} suffix="%" label="Automação do fluxo de MKT" />
+          <StatItem value={24} suffix="/7" label="Monitoramento de tendências" />
+          <StatItem value={5} suffix="min" label="Do DNA da marca ao post" />
         </motion.div>
       </div>
     </section>
