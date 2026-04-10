@@ -1,8 +1,9 @@
 /*
   BI PROJECTS — Swiss Design Tropical (Comercial)
-  - 3 frentes: dados individuais do negócio, APIs públicas (voos/clima), performance de MKT
-  - Sem dependência de dados governamentais
-  - Foco em resultados acionáveis para cada cliente
+  - Power BI como serviço de implementação (Enterprise)
+  - Inteligência de mercado via APIs públicas (voos, clima)
+  - Relatório semanal com IA
+  - Métricas Meta Insights
 */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -10,9 +11,9 @@ import {
   BarChart3,
   Plane,
   CloudSun,
-  LineChart,
-  Target,
-  ShoppingCart,
+  FileText,
+  Activity,
+  Layers,
 } from "lucide-react";
 
 const POWERBI_IMG =
@@ -20,34 +21,34 @@ const POWERBI_IMG =
 
 const biProjects = [
   {
-    icon: LineChart,
-    title: "Performance do Seu Negócio",
+    icon: BarChart3,
+    title: "Dashboard Power BI Personalizado",
     description:
-      "Dashboard exclusivo com receita, ticket médio, taxa de conversão e evolução mensal — tudo com os dados reais da sua operação.",
-    metrics: "Dados individuais por cliente",
-    category: "negócio",
+      "Implementamos dashboards Power BI sob medida para o seu negócio. Métricas de performance, receita e ocupação com a identidade visual da sua marca.",
+    metrics: "Plano Enterprise",
+    category: "bi",
   },
   {
-    icon: Target,
-    title: "Funil de Vendas e Conversão",
+    icon: Activity,
+    title: "Métricas de Redes Sociais",
     description:
-      "Acompanhe cada etapa do funil: do primeiro contato ao fechamento. Identifique gargalos e otimize sua taxa de conversão.",
-    metrics: "Visão completa do funil",
-    category: "negócio",
+      "Coleta automática de dados do Instagram e Facebook via Meta Insights. Acompanhe alcance, engajamento e crescimento de seguidores em um só lugar.",
+    metrics: "Meta API integrada",
+    category: "bi",
   },
   {
-    icon: ShoppingCart,
-    title: "Análise de Canais de Aquisição",
+    icon: FileText,
+    title: "Relatório Semanal com IA",
     description:
-      "Descubra quais canais (Google, Instagram, WhatsApp, indicação) trazem mais resultado e onde investir seu orçamento de marketing.",
-    metrics: "ROI por canal de aquisição",
-    category: "negócio",
+      "Toda segunda-feira, a IA gera um relatório estratégico com a linguagem da sua marca. Não são só números — é uma narrativa que aponta o que fazer.",
+    metrics: "Plano Enterprise",
+    category: "bi",
   },
   {
     icon: Plane,
     title: "Demanda de Voos e Passagens",
     description:
-      "Monitoramento via APIs públicas de busca e oferta de voos para Navegantes/Floripa. Antecipe picos de demanda turística na região.",
+      "Monitoramento via APIs públicas de busca e oferta de voos para Navegantes e Florianópolis. Antecipe picos de demanda turística na região.",
     metrics: "APIs públicas em tempo real",
     category: "mercado",
   },
@@ -55,17 +56,17 @@ const biProjects = [
     icon: CloudSun,
     title: "Dados Climáticos e Sazonais",
     description:
-      "Previsão e histórico climático integrados ao seu dashboard. Correlacione clima com fluxo de clientes e ajuste suas campanhas.",
+      "Previsão e histórico climático integrados. Correlacione clima com fluxo de clientes e ajuste suas campanhas para os melhores momentos.",
     metrics: "Previsão de até 15 dias",
     category: "mercado",
   },
   {
-    icon: BarChart3,
-    title: "Dashboards Personalizados",
+    icon: Layers,
+    title: "BI Sob Medida para seu Setor",
     description:
-      "BI sob medida para o seu tipo de negócio: hotel, restaurante, atrativo ou agência. Você define as métricas, nós construímos.",
+      "Hotel, restaurante, atrativo ou agência — cada tipo de negócio tem métricas diferentes. Construímos o dashboard ideal para a sua operação.",
     metrics: "100% customizável",
-    category: "negócio",
+    category: "bi",
   },
 ];
 
@@ -80,16 +81,16 @@ export default function BiProjects() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-16 lg:mb-24">
           <div>
             <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-              02 — Inteligência de Dados
+              02 — BI & Inteligência de Mercado
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-navy leading-[1.05] tracking-tight">
-              Dashboards que transformam<br />
-              <span className="italic text-coral">seus dados em decisões.</span>
+              Dados que viram<br />
+              <span className="italic text-coral">decisões estratégicas.</span>
             </h2>
           </div>
           <p className="text-base text-navy/60 max-w-md lg:text-right leading-relaxed">
-            Construímos dashboards Power BI com os dados reais do seu negócio, 
-            combinados com inteligência de mercado via APIs públicas de voos e clima.
+            Implementamos dashboards Power BI com os dados do seu negócio e 
+            inteligência de mercado via APIs públicas de voos, clima e demanda turística.
           </p>
         </div>
 
@@ -105,12 +106,12 @@ export default function BiProjects() {
             <div className="flex items-center gap-3 mb-4 lg:mb-6">
               <div className="flex gap-1.5">
                 <div className="w-3 h-3 rounded-full bg-coral/80" />
-                <div className="w-3 h-3 rounded-full bg-teal/60" />
+                <div className="w-3 h-3 rounded-full bg-amber-400/60" />
                 <div className="w-3 h-3 rounded-full bg-white/20" />
               </div>
               <div className="flex-1 flex items-center justify-center">
                 <span className="font-mono text-xs text-white/30 tracking-wider">
-                  DATABC — BUSINESS INTELLIGENCE DASHBOARD
+                  DATABC — POWER BI · BALNEÁRIO CAMBORIÚ
                 </span>
               </div>
               <div className="flex items-center gap-2">
@@ -123,7 +124,7 @@ export default function BiProjects() {
             {/* Dashboard Image */}
             <img
               src={POWERBI_IMG}
-              alt="Dashboard Power BI com analytics de negócio"
+              alt="Dashboard Power BI — Balneário Camboriú"
               className="w-full h-auto rounded-lg"
             />
           </div>
@@ -133,9 +134,9 @@ export default function BiProjects() {
             <BarChart3 size={18} />
             <div>
               <p className="text-xs font-mono uppercase tracking-wider text-white/70">
-                Atualização
+                Serviço de implementação
               </p>
-              <p className="text-sm font-semibold">Dados em tempo real</p>
+              <p className="text-sm font-semibold">Power BI sob medida</p>
             </div>
           </div>
         </motion.div>
@@ -144,10 +145,10 @@ export default function BiProjects() {
         <div className="flex flex-wrap gap-3 mb-8">
           <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-navy/5 rounded-full text-xs font-mono font-medium text-navy/70">
             <span className="w-2 h-2 rounded-full bg-coral" />
-            Dados do seu negócio
+            BI & Relatórios
           </span>
           <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-navy/5 rounded-full text-xs font-mono font-medium text-navy/70">
-            <span className="w-2 h-2 rounded-full bg-teal" />
+            <span className="w-2 h-2 rounded-full bg-navy/40" />
             Inteligência de mercado (APIs públicas)
           </span>
         </div>
@@ -165,7 +166,7 @@ export default function BiProjects() {
               {/* Category indicator */}
               <div
                 className={`absolute top-6 right-6 w-2 h-2 rounded-full ${
-                  project.category === "mercado" ? "bg-teal" : "bg-coral"
+                  project.category === "mercado" ? "bg-navy/40" : "bg-coral"
                 }`}
               />
 
@@ -189,7 +190,7 @@ export default function BiProjects() {
               <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-navy/5 rounded-full">
                 <div
                   className={`w-1.5 h-1.5 rounded-full ${
-                    project.category === "mercado" ? "bg-teal" : "bg-coral"
+                    project.category === "mercado" ? "bg-navy/40" : "bg-coral"
                   }`}
                 />
                 <span className="text-xs font-mono font-medium text-navy/60">
@@ -208,13 +209,13 @@ export default function BiProjects() {
           className="mt-12 lg:mt-16 text-center"
         >
           <p className="text-sm text-navy/40 mb-4">
-            Quer um dashboard personalizado para o seu negócio?
+            Quer um dashboard Power BI personalizado para o seu negócio?
           </p>
           <a
             href="#contato"
             className="group inline-flex items-center gap-2 font-semibold text-sm text-coral hover:text-coral-dark transition-colors"
           >
-            Solicite uma proposta
+            Solicite uma proposta de BI
             <span className="group-hover:translate-x-1 transition-transform inline-block">
               &rarr;
             </span>

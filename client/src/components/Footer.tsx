@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-xs text-white/35 leading-relaxed max-w-xs">
-              Dados e automação de marketing para o turismo de Balneário Camboriú. Mais resultados, menos esforço.
+              Marketing com IA e inteligência de dados para o turismo de Balneário Camboriú. Do DNA da marca à publicação automática.
             </p>
           </div>
 
@@ -29,10 +29,11 @@ export default function Footer() {
           <div>
             <h4 className="font-mono text-xs uppercase tracking-wider text-white/30 mb-4">Produto</h4>
             <ul className="space-y-2.5">
-              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Dashboards</a></li>
-              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Automação de MKT</a></li>
-              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">CRM Turístico</a></li>
-              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Previsão de Demanda</a></li>
+              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">DNA da Marca com IA</a></li>
+              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Criativos com IA</a></li>
+              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Banco de Imagens</a></li>
+              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Trend Intelligence</a></li>
+              <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Calendário Editorial</a></li>
               <li><a href="#bi" className="text-sm text-white/50 hover:text-white transition-colors">BI & Power BI</a></li>
             </ul>
           </div>
@@ -65,7 +66,7 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} DataBC. Todos os direitos reservados.
           </p>
           <p className="text-xs text-white/25">
-            Dados e automação de marketing &middot; Balneário Camboriú
+            Marketing com IA &middot; BI &middot; Balneário Camboriú
           </p>
         </div>
       </div>

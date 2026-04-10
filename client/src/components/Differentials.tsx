@@ -1,7 +1,7 @@
 /*
   DIFFERENTIALS — Swiss Design Tropical (Comercial)
-  - Foco em benefícios tangíveis para o cliente
-  - Sem referências a setor público
+  - Diferenciais reais baseados na documentação do produto
+  - Foco em Brand Intelligence, IA, automação e turismo
 */
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
@@ -9,33 +9,33 @@ import { useRef } from "react";
 const differentials = [
   {
     number: "01",
-    title: "Feito para o turismo de BC",
+    title: "IA que entende a sua marca",
     description:
-      "Não somos uma ferramenta genérica. Cada funcionalidade foi desenhada para os desafios reais de hotéis, agências, restaurantes e negócios turísticos de Balneário Camboriú.",
+      "Não é uma IA genérica. Nosso sistema extrai o DNA completo da sua marca — tom de voz, cores, público, valores — e usa esse perfil em tudo: criativos, calendário, relatórios e sugestões de tendências.",
   },
   {
     number: "02",
-    title: "Dados + Marketing em um só lugar",
+    title: "Feito para o turismo de BC",
     description:
-      "Chega de usar 5 ferramentas diferentes. Dashboards, automação de e-mail, CRM, campanhas multicanal e análise preditiva — tudo integrado em uma única plataforma.",
+      "Cada funcionalidade foi desenhada para os desafios reais de hotéis, agências, restaurantes e atrativos de Balneário Camboriú. Dados de voos, clima e sazonalidade integrados à sua estratégia.",
   },
   {
     number: "03",
-    title: "ROI comprovado desde o 1º mês",
+    title: "Da criação à publicação, tudo integrado",
     description:
-      "Nossos clientes veem resultados reais em semanas, não meses. Em média, 2.8x mais conversões e 40% de redução no custo de aquisição de clientes.",
+      "Banco de imagens com catalogação por IA, editor visual, geração de criativos com IA, calendário editorial e publicação automática no Instagram e Facebook. Tudo em uma única plataforma.",
   },
   {
     number: "04",
-    title: "Inteligência Artificial que vende",
+    title: "Tendências filtradas para o seu negócio",
     description:
-      "Algoritmos que preveem picos de demanda, sugerem o melhor preço e disparam campanhas automaticamente quando a oportunidade aparece. Você vende enquanto dorme.",
+      "Nosso radar de Trend Intelligence monitora Google Trends, Instagram e X, e a IA filtra apenas o que é relevante para a sua marca. Você recebe sugestões de conteúdo prontas, no seu tom de voz.",
   },
   {
     number: "05",
-    title: "Suporte humano e dedicado",
+    title: "Onboarding assistido e suporte dedicado",
     description:
-      "Nada de chatbots genéricos. Cada cliente tem um especialista dedicado que entende o mercado turístico e ajuda a extrair o máximo da plataforma.",
+      "Cada cliente passa por um onboarding completo com a equipe DataBC. Configuramos o perfil de marca, conectamos suas ferramentas e garantimos que você extraia o máximo da plataforma desde o primeiro dia.",
   },
 ];
 

@@ -34,7 +34,7 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium tracking-wider uppercase text-white/80 border border-white/20 rounded-full backdrop-blur-sm">
             <span className="w-1.5 h-1.5 rounded-full bg-coral animate-pulse" />
-            Plataforma de dados e automação para o turismo
+            Marketing com IA para o turismo
           </span>
         </motion.div>
 
@@ -68,9 +68,9 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-start sm:items-end gap-6 sm:gap-8"
         >
           <p className="text-base lg:text-lg text-white/70 max-w-md leading-relaxed font-sans">
-            Combinamos inteligência de dados com automação de marketing para que 
-            hotéis, agências, restaurantes e negócios turísticos possam focar no que 
-            realmente importa: crescer.
+            Nossa IA extrai o DNA da sua marca e cria conteúdo personalizado, 
+            identifica tendências, agenda publicações e gera relatórios — tudo 
+            automatizado para hotéis, agências e negócios turísticos de BC.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a

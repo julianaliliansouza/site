@@ -1,46 +1,51 @@
 /*
   SOLUTIONS — Swiss Design Tropical (Comercial)
-  - Foco em resultados de negócio e ROI
-  - Linguagem orientada a benefícios para o trade turístico
+  Funcionalidades REAIS do SaaS DataBC conforme documentação do produto
 */
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { BarChart3, Zap, Target, Mail, TrendingUp, Globe } from "lucide-react";
+import { Fingerprint, Sparkles, ImageIcon, TrendingUp, CalendarDays, CloudSun } from "lucide-react";
 
 const DASHBOARD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc-dashboard-bc-CrQ67mrtKmVaGPP7n6YmXa.webp";
 const AUTOMATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/automation-flow-diagram-BMAKPVCmngNnT6D5JRAbiR.webp";
 
 const features = [
   {
-    icon: BarChart3,
-    title: "Dashboards de Performance",
-    description: "Acompanhe taxa de ocupação, receita por canal e ROI das campanhas em tempo real.",
+    icon: Fingerprint,
+    title: "DNA da Marca com IA",
+    description: "Nossa IA conduz uma entrevista estratégica e extrai a identidade completa da sua marca — missão, tom de voz, paleta visual e público-alvo. Tudo é compilado em um perfil que guia todas as criações automaticamente.",
+    tag: "Brand Intelligence",
   },
   {
-    icon: Zap,
-    title: "Automação de Marketing",
-    description: "Dispare campanhas automáticas de e-mail, WhatsApp e remarketing para converter mais clientes.",
+    icon: Sparkles,
+    title: "Criativos com IA",
+    description: "Gere textos e imagens profissionais com um clique. A IA usa o DNA da sua marca para criar conteúdo no tom certo, com as cores certas, para o público certo. Integração com Canva e editor visual interno.",
+    tag: "Claude + DALL-E",
   },
   {
-    icon: Target,
-    title: "Segmentação de Clientes",
-    description: "Crie audiências por perfil de gasto, origem e comportamento para campanhas ultra-direcionadas.",
-  },
-  {
-    icon: Mail,
-    title: "Campanhas Multicanal",
-    description: "E-mail, SMS, redes sociais e Google Ads integrados em uma única plataforma com métricas unificadas.",
+    icon: ImageIcon,
+    title: "Banco de Imagens Inteligente",
+    description: "Conecte seu Google Drive e a IA cataloga automaticamente todas as suas imagens com tags, cores dominantes e score de qualidade. Encontre o criativo perfeito em segundos.",
+    tag: "Google Drive + IA",
   },
   {
     icon: TrendingUp,
-    title: "Previsão de Demanda",
-    description: "Antecipe picos de temporada e ajuste preços e campanhas com inteligência preditiva baseada em dados.",
+    title: "Trend Intelligence",
+    description: "Radar de tendências filtrado pelo DNA da sua marca. A IA monitora Google Trends, Instagram e X, calcula um score de relevância e sugere conteúdo pronto no tom da sua empresa.",
+    tag: "Radar de Tendências",
   },
   {
-    icon: Globe,
-    title: "CRM Turístico",
-    description: "Gerencie o relacionamento com seus clientes do primeiro contato ao pós-venda, tudo automatizado.",
+    icon: CalendarDays,
+    title: "Calendário Editorial",
+    description: "Agende e publique automaticamente no Instagram e Facebook. Sugestões inteligentes baseadas em sazonalidades, datas comemorativas e eventos locais do seu setor.",
+    tag: "Publicação Automática",
+  },
+  {
+    icon: CloudSun,
+    title: "Inteligência de Mercado",
+    description: "Dados de demanda de voos, condições climáticas e sazonalidade turística via APIs públicas. Antecipe picos, ajuste campanhas e tome decisões baseadas em dados reais do mercado.",
+    tag: "Voos + Clima + Demanda",
   },
 ];
 
@@ -55,15 +60,15 @@ export default function Solutions() {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-4 mb-16 lg:mb-24">
           <div>
             <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-              01 — Soluções
+              01 — Plataforma SaaS
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-navy leading-[1.05] tracking-tight">
-              Tudo que seu negócio precisa<br />
-              <span className="italic text-coral">para vender mais.</span>
+              Marketing com IA feito<br />
+              <span className="italic text-coral">para o turismo.</span>
             </h2>
           </div>
           <p className="text-base text-navy/60 max-w-md lg:text-right leading-relaxed">
-            Uma plataforma completa de dados e automação de marketing criada especificamente para o mercado turístico de Balneário Camboriú.
+            Da identidade da marca à publicação automática — uma plataforma completa que usa inteligência artificial para criar, agendar e otimizar o marketing do seu negócio turístico.
           </p>
         </div>
 
@@ -79,12 +84,11 @@ export default function Solutions() {
             <div className="rounded-lg overflow-hidden shadow-2xl shadow-navy/10">
               <img
                 src={DASHBOARD_IMG}
-                alt="Dashboard de performance do DataBC"
+                alt="Dashboard DataBC — Balneário Camboriú"
                 className="w-full h-auto"
               />
             </div>
-            {/* Decorative element */}
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-teal/30 rounded-lg -z-10" />
+            <div className="absolute -bottom-4 -left-4 w-24 h-24 border border-coral/20 rounded-lg -z-10" />
           </motion.div>
 
           {/* Right: Feature Cards */}
@@ -97,8 +101,13 @@ export default function Solutions() {
                 transition={{ duration: 0.5, delay: 0.1 * i }}
                 className="group p-6 bg-white rounded-lg border border-border hover:border-coral/40 transition-all duration-300 hover:shadow-lg hover:shadow-coral/5"
               >
-                <div className="w-10 h-10 rounded-md bg-navy/5 flex items-center justify-center mb-4 group-hover:bg-coral/10 transition-colors">
-                  <feature.icon size={20} className="text-navy group-hover:text-coral transition-colors" />
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-md bg-navy/5 flex items-center justify-center group-hover:bg-coral/10 transition-colors">
+                    <feature.icon size={20} className="text-navy group-hover:text-coral transition-colors" />
+                  </div>
+                  <span className="font-mono text-[10px] tracking-wider uppercase text-coral/70 bg-coral/5 px-2 py-1 rounded">
+                    {feature.tag}
+                  </span>
                 </div>
                 <h3 className="font-sans font-semibold text-navy text-base mb-2">{feature.title}</h3>
                 <p className="text-sm text-navy/55 leading-relaxed">{feature.description}</p>
@@ -117,16 +126,16 @@ export default function Solutions() {
           <div className="bg-white rounded-lg border border-border p-6 lg:p-10">
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-12 mb-8">
               <div className="flex-1">
-                <span className="font-mono text-xs tracking-wider uppercase text-teal-dark mb-2 block">
-                  Automação que converte
+                <span className="font-mono text-xs tracking-wider uppercase text-coral mb-2 block">
+                  Do DNA da marca ao post publicado
                 </span>
                 <h3 className="font-serif text-2xl lg:text-3xl text-navy leading-tight">
-                  Seus clientes recebem a mensagem certa, na hora certa
+                  Um fluxo completo e automatizado
                 </h3>
               </div>
               <p className="text-sm text-navy/55 max-w-sm leading-relaxed">
-                Monte jornadas de marketing automatizadas com nosso editor visual. 
-                Do primeiro contato à conversão final, sem trabalho manual.
+                A IA extrai o DNA da sua marca, gera criativos personalizados, 
+                identifica tendências relevantes e publica automaticamente — tudo conectado.
               </p>
             </div>
             <img

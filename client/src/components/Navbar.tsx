@@ -12,7 +12,7 @@ const LOGO_COLOR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/Pwv
 const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_cropped_ac6a6986.png";
 
 const navLinks = [
-  { label: "Soluções", href: "#solucoes" },
+  { label: "Plataforma", href: "#solucoes" },
   { label: "BI & Dados", href: "#bi" },
   { label: "Sobre", href: "#sobre" },
   { label: "Diferenciais", href: "#diferenciais" },

@@ -33,7 +33,7 @@ export default function CtaBanner() {
           transition={{ duration: 0.5, delay: 0.15 }}
           className="text-base text-white/80 max-w-lg mx-auto mb-8"
         >
-          Agende uma demonstração gratuita e veja como o DataBC pode acelerar seus resultados e reduzir seus custos de marketing em até 40%.
+          Agende uma demonstração gratuita e veja como a IA do DataBC pode criar conteúdo personalizado, identificar tendências e publicar automaticamente para o seu negócio.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 15 }}

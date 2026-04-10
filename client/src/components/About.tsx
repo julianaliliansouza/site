@@ -57,10 +57,10 @@ export default function About() {
             >
               <p className="text-base lg:text-lg text-white/60 leading-relaxed">
                 O DataBC nasceu da necessidade real do mercado turístico de Balneário Camboriú: 
-                ter acesso a dados confiáveis e ferramentas práticas para atrair mais clientes. 
-                Combinamos inteligência de dados com automação de marketing para que hotéis, 
-                agências, restaurantes e negócios turísticos possam focar no que fazem de melhor 
-                — enquanto a tecnologia cuida do resto.
+                ter uma plataforma que entende a identidade de cada negócio e transforma isso 
+                em marketing inteligente. Nossa IA extrai o DNA da sua marca, gera criativos 
+                personalizados, identifica tendências relevantes e publica automaticamente 
+                — enquanto você foca no que faz de melhor.
               </p>
             </motion.div>
 
@@ -74,14 +74,14 @@ export default function About() {
               <div className="border-l-2 border-coral pl-5">
                 <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-3">Nossa missão</h3>
                 <p className="text-sm text-white/50 leading-relaxed">
-                  Ajudar negócios turísticos a venderem mais com menos esforço, usando dados 
-                  estratégicos e automação inteligente de marketing.
+                  Ajudar negócios turísticos a venderem mais com menos esforço, usando 
+                  inteligência artificial e automação de marketing baseada no DNA de cada marca.
                 </p>
               </div>
               <div className="border-l-2 border-teal pl-5">
                 <h3 className="font-sans font-semibold text-white text-sm uppercase tracking-wider mb-3">Nossa visão</h3>
                 <p className="text-sm text-white/50 leading-relaxed">
-                  Ser a plataforma de referência em marketing e dados para o turismo, 
+                  Ser a plataforma de referência em marketing com IA para o turismo, 
                   impulsionando Balneário Camboriú como destino inteligente e competitivo.
                 </p>
               </div>
