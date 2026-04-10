@@ -21,7 +21,7 @@ export default function Footer() {
               />
             </a>
             <p className="text-xs text-white/35 leading-relaxed max-w-xs">
-              Dados e automação de marketing para o turismo de Balneário Camboriú. Mais reservas, menos esforço.
+              Dados e automação de marketing para o turismo de Balneário Camboriú. Mais resultados, menos esforço.
             </p>
           </div>
 

@@ -23,7 +23,7 @@ const differentials = [
     number: "03",
     title: "ROI comprovado desde o 1º mês",
     description:
-      "Nossos clientes veem resultados reais em semanas, não meses. Em média, 2.8x mais reservas diretas e 40% de redução no custo de aquisição de clientes.",
+      "Nossos clientes veem resultados reais em semanas, não meses. Em média, 2.8x mais conversões e 40% de redução no custo de aquisição de clientes.",
   },
   {
     number: "04",

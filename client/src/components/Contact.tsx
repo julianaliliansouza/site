@@ -43,7 +43,7 @@ export default function Contact() {
             </h2>
             <p className="text-base text-white/50 leading-relaxed mb-8 max-w-md">
               Em 30 minutos, nosso especialista mostra como o DataBC pode aumentar 
-              suas reservas e automatizar seu marketing. Sem compromisso, sem cartão de crédito.
+              seus resultados e automatizar seu marketing. Sem compromisso, sem cartão de crédito.
             </p>
 
             {/* Benefits */}

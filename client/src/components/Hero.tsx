@@ -45,9 +45,9 @@ export default function Hero() {
           transition={{ duration: 0.7, delay: 0.1 }}
           className="font-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl text-white leading-[0.95] tracking-tight max-w-5xl"
         >
-          Mais hóspedes.{" "}
+          Mais clientes.{" "}
           <br />
-          <span className="text-white/80">Mais receita.</span>
+          <span className="text-white/80">Mais resultados.</span>
           <br />
           <span className="italic text-coral">Menos esforço.</span>
         </motion.h1>
@@ -68,9 +68,9 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-start sm:items-end gap-6 sm:gap-8"
         >
           <p className="text-base lg:text-lg text-white/70 max-w-md leading-relaxed font-sans">
-            Automação de marketing e inteligência de dados para hotéis, 
-            agências e negócios turísticos de Balneário Camboriú. 
-            Atraia, converta e fidelize clientes no piloto automático.
+            Combinamos inteligência de dados com automação de marketing para que 
+            hotéis, agências, restaurantes e negócios turísticos possam focar no que 
+            realmente importa: crescer.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 shrink-0">
             <a
@@ -98,7 +98,7 @@ export default function Hero() {
           className="mt-16 lg:mt-24 grid grid-cols-2 sm:grid-cols-4 gap-6 lg:gap-12 border-t border-white/10 pt-8"
         >
           <StatItem value={340} suffix="+" label="Negócios atendidos" />
-          <StatItem value={2.8} suffix="x" label="Mais reservas diretas" />
+          <StatItem value={2.8} suffix="x" label="Mais conversões diretas" />
           <StatItem value={40} suffix="%" label="Redução de custo em MKT" />
           <StatItem value={98} suffix="%" label="Satisfação dos clientes" />
         </motion.div>

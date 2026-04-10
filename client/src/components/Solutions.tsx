@@ -20,7 +20,7 @@ const features = [
   {
     icon: Zap,
     title: "Automação de Marketing",
-    description: "Dispare campanhas automáticas de e-mail, WhatsApp e remarketing para converter mais reservas.",
+    description: "Dispare campanhas automáticas de e-mail, WhatsApp e remarketing para converter mais clientes.",
   },
   {
     icon: Target,
@@ -40,7 +40,7 @@ const features = [
   {
     icon: Globe,
     title: "CRM Turístico",
-    description: "Gerencie o relacionamento com hóspedes e clientes do check-in ao pós-venda, tudo automatizado.",
+    description: "Gerencie o relacionamento com seus clientes do primeiro contato ao pós-venda, tudo automatizado.",
   },
 ];
 
@@ -126,7 +126,7 @@ export default function Solutions() {
               </div>
               <p className="text-sm text-navy/55 max-w-sm leading-relaxed">
                 Monte jornadas de marketing automatizadas com nosso editor visual. 
-                Do primeiro contato à reserva confirmada, sem trabalho manual.
+                Do primeiro contato à conversão final, sem trabalho manual.
               </p>
             </div>
             <img
