@@ -54,8 +54,8 @@
   --color-navy-light: oklch(0.35 0.05 250);
   --color-coral: oklch(0.72 0.17 40);
   --color-coral-dark: oklch(0.62 0.17 40);
-  --color-teal: oklch(0.65 0.10 240);
-  --color-teal-dark: oklch(0.50 0.10 240);
+  --color-teal: #E8EDF5;
+  --color-teal-dark: #C5D0E8;
   --color-offwhite: oklch(0.98 0.003 90);
   --color-warmgray: oklch(0.92 0.005 90);
 
