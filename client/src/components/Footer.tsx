@@ -5,7 +5,7 @@
   - Thin top border
 */
 
-const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_e1dcd509.png";
+const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_cropped_ac6a6986.png";
 
 export default function Footer() {
   return (
@@ -18,7 +18,7 @@ export default function Footer() {
               <img
                 src={LOGO_WHITE}
                 alt="DataBC"
-                className="h-10 w-auto object-contain"
+                className="h-14 w-auto object-contain"
               />
             </a>
             <p className="text-xs text-white/35 leading-relaxed max-w-xs">

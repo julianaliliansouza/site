@@ -8,8 +8,8 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const LOGO_COLOR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_transparent_f8cba85b.png";
-const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_e1dcd509.png";
+const LOGO_COLOR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_cropped_96517f82.png";
+const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_cropped_ac6a6986.png";
 
 const navLinks = [
   { label: "Soluções", href: "#solucoes" },
@@ -38,18 +38,18 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
-        <a href="#" className="flex items-center group relative h-10 lg:h-12">
+        <a href="#" className="flex items-center group relative h-14 lg:h-16">
           <img
             src={LOGO_COLOR}
             alt="DataBC"
-            className={`h-10 lg:h-12 w-auto object-contain absolute top-0 left-0 transition-opacity duration-500 ${
+            className={`h-14 lg:h-16 w-auto object-contain absolute top-0 left-0 transition-opacity duration-500 ${
               scrolled ? "opacity-100" : "opacity-0"
             }`}
           />
           <img
             src={LOGO_WHITE}
             alt="DataBC"
-            className={`h-10 lg:h-12 w-auto object-contain absolute top-0 left-0 transition-opacity duration-500 ${
+            className={`h-14 lg:h-16 w-auto object-contain absolute top-0 left-0 transition-opacity duration-500 ${
               scrolled ? "opacity-0" : "opacity-100"
             }`}
           />
@@ -57,7 +57,7 @@ export default function Navbar() {
           <img
             src={LOGO_COLOR}
             alt=""
-            className="h-10 lg:h-12 w-auto object-contain invisible"
+            className="h-14 lg:h-16 w-auto object-contain invisible"
             aria-hidden="true"
           />
         </a>
