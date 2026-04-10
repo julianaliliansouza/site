@@ -8,7 +8,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Rocket, Shield, Lightbulb, HeartHandshake, TrendingUp } from "lucide-react";
 
-const DATA_VIZ = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/data-viz-RDoHTRmDETvjZTuugwPsJJ.webp";
+const DASHBOARD_MOCKUP = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc-dashboard-mockup-WvkyU2CCokqzE4hcaAezWz.webp";
 
 const values = [
   { icon: Rocket, text: "Resultados mensuráveis e foco em performance" },
@@ -118,9 +118,9 @@ export default function About() {
           >
             <div className="relative w-full">
               <img
-                src={DATA_VIZ}
-                alt="Visualização de dados e analytics"
-                className="w-full h-auto rounded-lg"
+                src={DASHBOARD_MOCKUP}
+                alt="Dashboard DataBC — plataforma de marketing e dados para o turismo"
+                className="w-full h-auto rounded-lg shadow-2xl shadow-black/30"
               />
               {/* Decorative border */}
               <div className="absolute -top-4 -right-4 w-full h-full border border-teal/20 rounded-lg -z-10" />
