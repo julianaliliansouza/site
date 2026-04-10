@@ -33,6 +33,7 @@ export default function Footer() {
               <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Automação de MKT</a></li>
               <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">CRM Turístico</a></li>
               <li><a href="#solucoes" className="text-sm text-white/50 hover:text-white transition-colors">Previsão de Demanda</a></li>
+              <li><a href="#bi" className="text-sm text-white/50 hover:text-white transition-colors">BI & Power BI</a></li>
             </ul>
           </div>
 

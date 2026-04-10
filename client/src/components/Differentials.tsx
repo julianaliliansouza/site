@@ -49,7 +49,7 @@ export default function Differentials() {
         {/* Section Header */}
         <div className="mb-16 lg:mb-24">
           <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-            03 — Por que o DataBC
+            04 — Por que o DataBC
           </span>
           <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl xl:text-6xl text-navy leading-[1.05] tracking-tight max-w-3xl">
             Seus concorrentes já estão{" "}

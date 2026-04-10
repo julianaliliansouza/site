@@ -13,6 +13,7 @@ const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/Pwv
 
 const navLinks = [
   { label: "Soluções", href: "#solucoes" },
+  { label: "BI & Dados", href: "#bi" },
   { label: "Sobre", href: "#sobre" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Contato", href: "#contato" },

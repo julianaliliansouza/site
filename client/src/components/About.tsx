@@ -32,7 +32,7 @@ export default function About() {
       <div className="container relative z-10">
         {/* Section Header */}
         <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-          02 — Quem somos
+          03 — Quem somos
         </span>
 
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-16">

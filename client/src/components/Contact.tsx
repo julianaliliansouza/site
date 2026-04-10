@@ -34,7 +34,7 @@ export default function Contact() {
             transition={{ duration: 0.7 }}
           >
             <span className="font-mono text-xs tracking-wider uppercase text-coral mb-3 block">
-              04 — Comece agora
+              05 — Comece agora
             </span>
             <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl text-white leading-[1.1] tracking-tight mb-6">
               Agende sua demo{" "}

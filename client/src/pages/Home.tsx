@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Partners from "@/components/Partners";
 import Solutions from "@/components/Solutions";
+import BiProjects from "@/components/BiProjects";
 import About from "@/components/About";
 import Differentials from "@/components/Differentials";
 import CtaBanner from "@/components/CtaBanner";
@@ -16,6 +17,7 @@ export default function Home() {
         <Hero />
         <Partners />
         <Solutions />
+        <BiProjects />
         <About />
         <Differentials />
         <CtaBanner />
