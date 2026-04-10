@@ -8,6 +8,9 @@ import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
+const LOGO_COLOR = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_transparent_f8cba85b.png";
+const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_e1dcd509.png";
+
 const navLinks = [
   { label: "Soluções", href: "#solucoes" },
   { label: "Sobre", href: "#sobre" },
@@ -35,18 +38,28 @@ export default function Navbar() {
     >
       <div className="container flex items-center justify-between h-16 lg:h-20">
         {/* Logo */}
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="flex items-end gap-[2px]">
-            <div className={`w-[3px] h-3 rounded-sm transition-colors duration-500 ${scrolled ? "bg-coral" : "bg-coral"}`} />
-            <div className={`w-[3px] h-4 rounded-sm transition-colors duration-500 ${scrolled ? "bg-coral" : "bg-coral"}`} />
-            <div className={`w-[3px] h-5 rounded-sm transition-colors duration-500 ${scrolled ? "bg-teal" : "bg-teal"}`} />
-            <div className={`w-[3px] h-6 rounded-sm transition-colors duration-500 ${scrolled ? "bg-navy" : "bg-white/80"}`} />
-          </div>
-          <span className={`font-serif text-xl lg:text-2xl tracking-tight transition-colors duration-500 ${
-            scrolled ? "text-navy" : "text-white"
-          }`}>
-            Data<span className="text-coral">BC</span>
-          </span>
+        <a href="#" className="flex items-center group relative h-10 lg:h-12">
+          <img
+            src={LOGO_COLOR}
+            alt="DataBC"
+            className={`h-10 lg:h-12 w-auto object-contain absolute top-0 left-0 transition-opacity duration-500 ${
+              scrolled ? "opacity-100" : "opacity-0"
+            }`}
+          />
+          <img
+            src={LOGO_WHITE}
+            alt="DataBC"
+            className={`h-10 lg:h-12 w-auto object-contain absolute top-0 left-0 transition-opacity duration-500 ${
+              scrolled ? "opacity-0" : "opacity-100"
+            }`}
+          />
+          {/* Spacer to maintain width */}
+          <img
+            src={LOGO_COLOR}
+            alt=""
+            className="h-10 lg:h-12 w-auto object-contain invisible"
+            aria-hidden="true"
+          />
         </a>
 
         {/* Desktop Nav */}

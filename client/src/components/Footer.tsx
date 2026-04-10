@@ -5,6 +5,8 @@
   - Thin top border
 */
 
+const LOGO_WHITE = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc_logo_v2_white_e1dcd509.png";
+
 export default function Footer() {
   return (
     <footer className="bg-navy border-t border-white/5">
@@ -12,16 +14,12 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <a href="#" className="flex items-center gap-2 mb-4">
-              <div className="flex items-end gap-[2px]">
-                <div className="w-[3px] h-3 bg-coral rounded-sm" />
-                <div className="w-[3px] h-4 bg-coral rounded-sm" />
-                <div className="w-[3px] h-5 bg-teal rounded-sm" />
-                <div className="w-[3px] h-6 bg-white/60 rounded-sm" />
-              </div>
-              <span className="font-serif text-xl text-white tracking-tight">
-                Data<span className="text-coral">BC</span>
-              </span>
+            <a href="#" className="flex items-center mb-4">
+              <img
+                src={LOGO_WHITE}
+                alt="DataBC"
+                className="h-10 w-auto object-contain"
+              />
             </a>
             <p className="text-xs text-white/35 leading-relaxed max-w-xs">
               Hub de inteligência de dados turísticos e automação de marketing de Balneário Camboriú.
