@@ -32,8 +32,8 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
           className="mb-6"
         >
-          <span className="inline-flex items-center gap-2 px-3 py-1.5 text-xs font-mono font-medium tracking-wider uppercase text-teal border border-teal/30 rounded-full bg-teal/10">
-            <span className="w-1.5 h-1.5 rounded-full bg-teal animate-pulse" />
+          <span className="inline-flex items-center gap-2 px-4 py-2 text-xs font-mono font-medium tracking-wider uppercase text-white/80 border border-white/20 rounded-full backdrop-blur-sm">
+            <span className="w-1.5 h-1.5 rounded-full bg-coral animate-pulse" />
             Plataforma de dados e automação para o turismo
           </span>
         </motion.div>

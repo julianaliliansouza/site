@@ -8,7 +8,7 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Rocket, Shield, Lightbulb, HeartHandshake, TrendingUp } from "lucide-react";
 
-const DASHBOARD_MOCKUP = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc-dashboard-mockup-WvkyU2CCokqzE4hcaAezWz.webp";
+const DASHBOARD_MOCKUP = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/databc-dashboard-bc-CrQ67mrtKmVaGPP7n6YmXa.webp";
 
 const values = [
   { icon: Rocket, text: "Resultados mensuráveis e foco em performance" },
