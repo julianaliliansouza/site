@@ -9,7 +9,7 @@ import { useRef } from "react";
 import { BarChart3, Zap, Target, Mail, TrendingUp, Globe } from "lucide-react";
 
 const DASHBOARD_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/saas-dashboard-NvQbRwNSNDXa7HZQjrvHzs.webp";
-const AUTOMATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/automation-flow-fqttXCMfda3V7Kfn4bdgpT.webp";
+const AUTOMATION_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663161249291/PwvU6Hbjwjn6GEhcVdKcVq/automation-flow-diagram-BMAKPVCmngNnT6D5JRAbiR.webp";
 
 const features = [
   {
