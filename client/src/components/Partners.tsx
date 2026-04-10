@@ -47,7 +47,7 @@ export default function Partners() {
               initial={{ opacity: 0, y: 10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.4, delay: 0.05 * i }}
-              className="flex flex-col items-center justify-center h-20 px-4 rounded-md border border-border/50 bg-offwhite/50 hover:border-coral/30 hover:bg-coral/5 transition-all duration-300 gap-2"
+              className="flex flex-col items-center justify-center h-20 px-4 rounded-md border border-border/50 bg-[#E8EDF5]/50 hover:border-coral/30 hover:bg-coral/5 transition-all duration-300 gap-2"
             >
               <segment.icon size={20} className="text-navy/30" />
               <span className="font-sans font-medium text-xs text-navy/50 text-center leading-tight">
